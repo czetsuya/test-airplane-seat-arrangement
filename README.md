@@ -44,6 +44,8 @@ You must have the following installed into your local machine.
  5. Open/Import the file src/test/resources/armillary-test.postman_collection.json in postman.
  6. Run both the requests in the collection and observe the result.
  
+ This project has SonarLint integration, sadly no no compatible Springfox for Swagger documentation is available yet.
+ 
 # Authors
 
 * **Edward P. Legaspi** - *Architect* - [czetsuya](https://bitbucket.com/czetsuya)
