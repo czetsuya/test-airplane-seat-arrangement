@@ -30,6 +30,10 @@ It is up to you, keep in mind that you need to assume this backend endpoint will
 I use Spring framework to develop the API as it's lightweight, serverless, organized, modular and very easy to test. 
 It has a developer friendly module for REST API development too that can make things more easier for our project development.
 
+I enable caching on seat arrangement request for faster execution.
+
+This project has SonarLint integration, sadly no no compatible Springfox for Swagger documentation is available yet.
+ 
 You must have the following installed into your local machine.
  
  - Java 8
@@ -43,8 +47,7 @@ You must have the following installed into your local machine.
  4. Run the project as a Spring Boot App.
  5. Open/Import the file src/test/resources/armillary-test.postman_collection.json in postman.
  6. Run both the requests in the collection and observe the result.
- 
- This project has SonarLint integration, sadly no no compatible Springfox for Swagger documentation is available yet.
+
  
 # Authors
 
