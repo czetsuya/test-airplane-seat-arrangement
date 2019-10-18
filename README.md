@@ -37,12 +37,12 @@ You must have the following installed into your local machine.
  - Lombok - https://projectlombok.org/setup/eclipse
  - Postman
 
- 1.) Download and install Spring STS into your local machine.
- 2.) I'm using Lombok so it must be setup on the tester's machine. It removes some of the boilerplate codes like getters and setters.
- 3.) Import the zipped project into your Spring STS environment.
- 4.) Run the project as a Spring Boot App.
- 5.) Open/Import the file src/test/resources/armillary-test.postman_collection.json in postman.
- 6.) Run both the requests in the collection and observe the result.
+ 1. Download and install Spring STS into your local machine.
+ 2. I'm using Lombok so it must be setup on the tester's machine. It removes some of the boilerplate codes like getters and setters.
+ 3. Import the zipped project into your Spring STS environment.
+ 4. Run the project as a Spring Boot App.
+ 5. Open/Import the file src/test/resources/armillary-test.postman_collection.json in postman.
+ 6. Run both the requests in the collection and observe the result.
  
 # Authors
 
