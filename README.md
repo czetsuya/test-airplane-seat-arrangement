@@ -77,10 +77,10 @@ You must have the following installed into your local machine.
  6. Run both the requests in the collection and observe the result.
 
  
-# Authors
+## Authors
 
 * **Edward P. Legaspi** - *Architect* - [czetsuya](https://bitbucket.com/czetsuya)
 
-# URLs
+## URLs
 
  * https://github.com/czetsuya
