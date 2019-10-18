@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "527c2322-1a54-4a8c-b769-2998069f3af0",
+		"name": "armillary-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request seat arrangement 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"specification\": [\n\t\t[ 2, 3 ], [ 3, 4 ], [ 3, 2 ], [ 4, 3 ]\n\t],\n\t\"noOfCustomers\": 30\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/airplanes/seats/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airplanes",
+						"seats",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request seat arrangement 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"specification\": [\n\t\t[ 3, 4 ], [ 4, 5 ], [ 2, 3 ], [ 3, 4 ]\n\t],\n\t\"noOfCustomers\": 30\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/airplanes/seats/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airplanes",
+						"seats",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
