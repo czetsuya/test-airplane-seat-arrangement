@@ -36,6 +36,7 @@ This project has SonarLint integration, sadly no no compatible Springfox for Swa
  
 The API return a 2D array of seat arrangement wrap in a response object. Here is the output from the input array above:
 
+```
 {
    "seatArrangements":[
       [
@@ -130,6 +131,7 @@ The API return a 2D array of seat arrangement wrap in a response object. Here is
       ]
    ]
 }
+```
  
 ## How to Run
 
