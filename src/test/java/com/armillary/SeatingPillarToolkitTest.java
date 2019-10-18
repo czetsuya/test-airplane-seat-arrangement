@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
  */
 public class SeatingPillarToolkitTest {
 
-    private static final int[][] INPUT = { { 2, 3 }, { 3, 4 }, { 3, 2 }, { 4, 3 } };
+    private static final Integer[][] INPUT = { { 2, 3 }, { 3, 4 }, { 3, 2 }, { 4, 3 } };
     private static final int NO_OF_CUSTOMERS = 30;
 
     @Test

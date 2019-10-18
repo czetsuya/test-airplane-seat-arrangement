@@ -16,7 +16,7 @@ public class Airplane {
 
     public static final String NOT_FIRST = "NOT_FIRST";
     public static final String NOT_LAST = "NOT_LAST";
-    private int[][] seatSpecification;
+    private Integer[][] seatSpecification;
     private Integer[][] seatArrangement;
 
     public void initSeatArrangement(int row, int col) {
@@ -42,6 +42,23 @@ public class Airplane {
 
     public Integer[] getSeatSpecification(int seatGroupIdx) {
 
-        return seatArrangement[seatGroupIdx];
+        return seatSpecification[seatGroupIdx];
+    }
+
+    public int getSeatSpecificationArrangementFirstIndex(int group) {
+        int firstIndex = 0;
+        for (int i = 1; i < group; i++) {
+            firstIndex += seatSpecification[i - 1][0];
+        }
+        return firstIndex;
+    }
+
+    public int getSeatSpecificationArrangementLastIndex(int group) {
+        return getSeatSpecificationArrangementFirstIndex(group) + seatSpecification[group][0] - 1;
+    }
+
+    public int getSeatSpecificationLength(int group) {
+
+        return seatSpecification[group][0];
     }
 }
