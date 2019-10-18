@@ -2,7 +2,7 @@ package com.armillary;
 
 import java.util.Arrays;
 
-import com.armillary.domain.Airplane;
+import com.armillary.domain.AirplaneSeating;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,40 +16,41 @@ public class AirplaneSeatingToolkit {
 
     public AirplaneSeatingToolkit(Integer[][] seatSpecification, int noOfCustomers) {
 
-        Airplane airplane = new Airplane();
-        airplane.setSeatSpecification(seatSpecification);
+        AirplaneSeating airplaneSeating = new AirplaneSeating();
+        airplaneSeating.setSpecification(seatSpecification);
 
         int row = findMaxRow(seatSpecification);
         int col = sumColLength(seatSpecification);
 
-        airplane.initSeatArrangement(row, col);
+        airplaneSeating.initArrangement(row, col);
 
         log.debug("row x col: {} x {}", row, col);
 
         for (int r = 0; r < row; r++) {
-            for (int seatGroupIdx = 0; seatGroupIdx < seatSpecification.length; seatGroupIdx++) {
-                if (seatGroupIdx != 0) {
-                    populateAisle(r, airplane, seatGroupIdx, Airplane.NOT_FIRST);
-                } else if (seatGroupIdx != seatSpecification.length - 1) {
-                    populateAisle(r, airplane, seatGroupIdx, Airplane.NOT_LAST);
+            for (int specificationIdx = 0; specificationIdx < seatSpecification.length; specificationIdx++) {
+                if (specificationIdx != 0) {
+                    populateAisle(r, airplaneSeating, specificationIdx, AirplaneSeating.NOT_FIRST);
+
+                } else if (specificationIdx != seatSpecification.length - 1) {
+                    populateAisle(r, airplaneSeating, specificationIdx, AirplaneSeating.NOT_LAST);
                 }
 //                populateWindow();
 //                populateMiddle();
             }
         }
 
-        print2D(airplane.getSeatArrangement());
+        print2D(airplaneSeating.getArrangement());
     }
 
-    private void populateAisle(int row, Airplane airplane, int seatGroupIdx, String position) {
+    private void populateAisle(int row, AirplaneSeating airplane, int seatGroupIdx, String position) {
 
         Integer[] seatGroupSpecification = airplane.getSeatSpecification(seatGroupIdx);
         for (int i = 0; i < seatGroupSpecification[0]; i++) {
-            if (position.equals(Airplane.NOT_FIRST)) {
-                airplane.setSeat(row, airplane.getSeatSpecificationArrangementFirstIndex(seatGroupIdx), seatCtr++);
+            if (position.equals(AirplaneSeating.NOT_FIRST)) {
+                airplane.setSeatValue(row, airplane.getSeatSpecificationArrangementFirstIndex(seatGroupIdx), seatCtr++);
 
-            } else if (position.equals(Airplane.NOT_LAST)) {
-                airplane.setSeat(row, airplane.getSeatSpecificationArrangementLastIndex(seatGroupIdx), seatCtr++);
+            } else if (position.equals(AirplaneSeating.NOT_LAST)) {
+                airplane.setSeatValue(row, airplane.getSeatSpecificationArrangementLastIndex(seatGroupIdx), seatCtr++);
             }
         }
     }
