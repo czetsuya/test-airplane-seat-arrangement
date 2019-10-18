@@ -40,94 +40,19 @@ The API return a 2D array of seat arrangement wrap in a response object. Here is
 {
    "seatArrangements":[
       [
-         19,
-         25,
-         26,
-         1,
-         2,
-         27,
-         28,
-         29,
-         3,
-         4,
-         30,
-         5,
-         6,
-         null,
-         null,
-         20
+         19, 25, 26, 1, 2, 27, 28, 29, 3, 4, 30, 5, 6, null, null, 20
       ],
       [
-         21,
-         null,
-         null,
-         7,
-         8,
-         null,
-         null,
-         null,
-         9,
-         10,
-         null,
-         11,
-         12,
-         null,
-         null,
-         22
+         21, null, null, 7, 8, null, null, null, 9, 10, null, 11, 12, null, null, 22
       ],
       [
-         23,
-         null,
-         null,
-         13,
-         14,
-         null,
-         null,
-         null,
-         15,
-         null,
-         null,
-         null,
-         16,
-         null,
-         null,
-         24
+         23, null, null, 13, 14, null, null, null, 15, null, null, null, 16, null, null, 24
       ],
       [
-         null,
-         null,
-         null,
-         null,
-         17,
-         null,
-         null,
-         null,
-         18,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
+         null, null, null, null, 17, null, null, null, 18, null, null, null, null, null, null, null
       ],
       [
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
+         null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null
       ]
    ]
 }
