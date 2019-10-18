@@ -25,6 +25,25 @@ It is up to you, keep in mind that you need to assume this backend endpoint will
  - Please provide instructions on how to run and build the project on README.md
  - Make sure reviewers can easily set it up and review it
  
+## How to Run
+
+I use Spring framework to develop the API as it's lightweight, serverless, organized, modular and very easy to test. 
+It has a developer friendly module for REST API development too that can make things more easier for our project development.
+
+You must have the following installed into your local machine.
+ 
+ - Java 8
+ - Spring STS 4 - https://spring.io/tools
+ - Lombok - https://projectlombok.org/setup/eclipse
+ - Postman
+
+ 1.) Download and install Spring STS into your local machine.
+ 2.) I'm using Lombok so it must be setup on the tester's machine. It removes some of the boilerplate codes like getters and setters.
+ 3.) Import the zipped project into your Spring STS environment.
+ 4.) Run the project as a Spring Boot App.
+ 5.) Open/Import the file src/test/resources/armillary-test.postman_collection.json in postman.
+ 6.) Run both the requests in the collection and observe the result.
+ 
 # Authors
 
 * **Edward P. Legaspi** - *Architect* - [czetsuya](https://bitbucket.com/czetsuya)
