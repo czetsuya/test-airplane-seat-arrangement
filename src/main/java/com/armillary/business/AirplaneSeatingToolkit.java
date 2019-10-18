@@ -1,4 +1,4 @@
-package com.armillary;
+package com.armillary.business;
 
 import java.util.Arrays;
 

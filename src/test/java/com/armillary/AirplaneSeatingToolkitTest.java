@@ -5,6 +5,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 
+import com.armillary.business.AirplaneSeatingToolkit;
+
 /**
  * The output values have been manually computed by hand.
  * 

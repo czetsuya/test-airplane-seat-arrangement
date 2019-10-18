@@ -24,8 +24,8 @@ It is up to you, keep in mind that you need to assume this backend endpoint will
  - Code must be accompanied by tests
  - Please provide instructions on how to run and build the project on README.md
  - Make sure reviewers can easily set it up and review it
- 
-## How to Run
+
+## What to check
 
 I use Spring framework to develop the API as it's lightweight, serverless, organized, modular and very easy to test. 
 It has a developer friendly module for REST API development too that can make things more easier for our project development.
@@ -34,6 +34,105 @@ I enable caching on seat arrangement request for faster execution.
 
 This project has SonarLint integration, sadly no no compatible Springfox for Swagger documentation is available yet.
  
+The API return a 2D array of seat arrangement wrap in a response object. Here is the output from the input array above:
+
+{
+   "seatArrangements":[
+      [
+         19,
+         25,
+         26,
+         1,
+         2,
+         27,
+         28,
+         29,
+         3,
+         4,
+         30,
+         5,
+         6,
+         null,
+         null,
+         20
+      ],
+      [
+         21,
+         null,
+         null,
+         7,
+         8,
+         null,
+         null,
+         null,
+         9,
+         10,
+         null,
+         11,
+         12,
+         null,
+         null,
+         22
+      ],
+      [
+         23,
+         null,
+         null,
+         13,
+         14,
+         null,
+         null,
+         null,
+         15,
+         null,
+         null,
+         null,
+         16,
+         null,
+         null,
+         24
+      ],
+      [
+         null,
+         null,
+         null,
+         null,
+         17,
+         null,
+         null,
+         null,
+         18,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null
+      ],
+      [
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null,
+         null
+      ]
+   ]
+}
+ 
+## How to Run
+
 You must have the following installed into your local machine.
  
  - Java 8

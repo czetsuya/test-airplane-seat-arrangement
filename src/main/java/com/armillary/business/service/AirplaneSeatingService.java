@@ -5,7 +5,7 @@ import javax.validation.Valid;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import com.armillary.AirplaneSeatingToolkit;
+import com.armillary.business.AirplaneSeatingToolkit;
 import com.armillary.business.domain.SeatingRequestDto;
 
 /**
